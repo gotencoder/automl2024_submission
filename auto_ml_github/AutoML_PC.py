@@ -525,11 +525,11 @@ model = AutoML_PC(S_points)
 hyperparam = model.Get_Hyperparam()
 graph1, _ = model.Points_to_Graph(hyperparam)
 start_time = time.time()
-e1, e2= model.Optimize_Hyperparameters(2, T=0.5)
+e1, e2= model.Optimize_Hyperparameters(10, T=0.5)
 end_time = time.time()
 
 #Run code below to obtain results for the individual model runs
-#q_mean, q_std, t_time, m_time, s_time = model.run_loop(model_name='DW', n_iter=10)
+q_mean, q_std, t_time, m_time, s_time = model.run_loop(model_name='DW', n_iter=10)
 print(f"Total time is {end_time - start_time} seconds")
 
 
