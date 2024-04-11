@@ -12,3 +12,6 @@ pip install -r requirments.txt
 #gat_ks.py, gcn_ks.py, graphsage_ks.py, deep_walk_ks.py are the scripts deep learning based models
 #models.py is all of te deep learning models within a single script
 #classical.py contains the code for the classical models of the paper
+
+#Running revised code
+First unpack the zip file and run the two files: AutoML_PC_static_bayesian.py to run the static models (both random search and bayesian optimization) and AutoML_PC.py to run the models for the spatio-temporal data (both random and bayesian approaches)
